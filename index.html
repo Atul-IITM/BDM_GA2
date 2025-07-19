@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload BDM GA2</title>
+    <style>
+        body {
+    /* Gradient reminiscent of 3D classic arcades */
+    background: linear-gradient(135deg, #11144b 0%, #4315a6 50%, #17c5e9 100%);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.bdm-ga-classic {
+    /* Optional: container styling for the BDM GA section */
+    background: rgba(20, 20, 41, 0.85);
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+    padding: 40px;
+    color: #fff;
+    max-width: 700px;
+    margin: 60px auto;
+}
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .uxuy-section {
+            background: #e6f7ff;
+            border-left: 4px solid #1890ff;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+        input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background: #1890ff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #40a9ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="bdm-ga-classic">
+    <div class="container">
+        <h1>Upload Your Data Set For BDM GA2</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file">Upload Excel:</label>
+            <input type="file" id="file" name="file" accept=".xlsx, .xls" required>
+
+            
+            
+            <button type="submit">Upload File</button>
+        </form>
+    </div>
+    </div>
+    
+</body>
+</html>

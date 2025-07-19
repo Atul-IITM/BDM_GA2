@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+    <style>
+        body {
+            background-color: #eef3f7;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 400px;
+            margin: 120px auto;
+            background: #fff;
+            padding: 32px;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            text-align: center;
+        }
+        .error-title {
+            color: #DB2828;
+            font-size: 2em;
+            margin-bottom: 12px;
+        }
+        .error-message {
+            color: #c40000;
+            font-size: 1.1em;
+            margin-bottom: 24px;
+        }
+        a {
+            color: #1678c2;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            color: #105a8b;
+            text-decoration: underline;
+        }
+        .icon {
+            font-size: 3em;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">&#9888;</div>
+        <div class="error-title">Error</div>
+        <div class="error-message">{{ message }}</div>
+        <a href="/">Try Again</a>
+    </div>
+</body>
+</html>
