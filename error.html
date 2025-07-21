@@ -1,47 +1,74 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Error</title>
+    <!-- Retro/Futuristic Fonts for 3D classic feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Audiowide&display=swap" rel="stylesheet">
     <style>
         body {
-            background-color: #eef3f7;
-            font-family: Arial, sans-serif;
+            /* 3D gradient background */
+            background: linear-gradient(135deg, #2f155a 0%, #4468bc 60%, #01eaea 100%);
+            min-height: 100vh;
             margin: 0;
             padding: 0;
+            font-family: 'Audiowide', 'Orbitron', Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .container {
             max-width: 400px;
-            margin: 120px auto;
-            background: #fff;
-            padding: 32px;
-            border-radius: 10px;
-            box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+            margin: 60px auto;
+            background: rgba(30, 32, 70, 0.95);
+            padding: 36px;
+            border-radius: 20px;
+            box-shadow: 0 8px 32px rgba(0, 217, 255, 0.19), 0 1.5px 20px #0a38b3;
             text-align: center;
-        }
-        .error-title {
-            color: #DB2828;
-            font-size: 2em;
-            margin-bottom: 12px;
-        }
-        .error-message {
-            color: #c40000;
-            font-size: 1.1em;
-            margin-bottom: 24px;
-        }
-        a {
-            color: #1678c2;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            color: #105a8b;
-            text-decoration: underline;
+            border: 2.6px solid #00fbff;
         }
         .icon {
-            font-size: 3em;
-            margin-bottom: 8px;
+            font-size: 3.2em;
+            margin-bottom: 14px;
+            color: #ffe366;
+            text-shadow: 0 0 25px #fffb97, 0 2px 9px #330099;
+            filter: drop-shadow(0 2px 8px #de93ff);
+        }
+        .error-title {
+            color: #fe4777;
+            font-family: 'Orbitron', 'Audiowide', Arial, sans-serif;
+            font-size: 2.1em;
+            margin-bottom: 14px;
+            text-shadow: 0 0 16px #ff9899, 0 1.5px 9px #b50047;
+            letter-spacing: 1.5px;
+        }
+        .error-message {
+            color: #ffef73;
+            font-size: 1.16em;
+            margin-bottom: 30px;
+            font-family: 'Audiowide', 'Orbitron', Arial, sans-serif;
+            text-shadow: 0 0 8px #b00ad8, 0 1.5px 9px #003d6c;
+        }
+        a {
+            color: #4deeea;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: 'Orbitron', Arial, sans-serif;
+            font-size: 1.13em;
+            padding: 8px 24px;
+            border-radius: 8px;
+            background: linear-gradient(97deg, #22f2f6 20%, #353aff 80%);
+            box-shadow: 0 4px 18px #1bd2fa80, 0 2px 5px #00448060;
+            border: none;
+            transition: background 0.2s, color 0.2s;
+            display: inline-block;
+        }
+        a:hover {
+            background: linear-gradient(120deg, #a3dfeb 0%, #fa40cf 100%);
+            color: #fff;
+            box-shadow: 0 6px 28px #65cdffb1;
         }
     </style>
 </head>
@@ -49,7 +76,7 @@
     <div class="container">
         <div class="icon">&#9888;</div>
         <div class="error-title">Error</div>
-        <div class="error-message">{{ message }}</div>
+        <div class="error-message">Something went wrong. Please upload the original document by IITM! 🤔</div>
         <a href="/">Try Again</a>
     </div>
 </body>
